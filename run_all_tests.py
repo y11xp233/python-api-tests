@@ -14,8 +14,6 @@ def run_tests():
             1	至少有一个测试失败了（断言没通过）
             2	测试过程中出现了错误（比如 Python 语法错误、找不到模块等）'''
     result = pytest.main([
-        "test_api_posts.py",
-        "test_db_verify.py",
         "-v",
         "--alluredir=./allure-results",
         "--clean-alluredir"
